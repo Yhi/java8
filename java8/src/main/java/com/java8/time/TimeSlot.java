@@ -1,9 +1,8 @@
-package com.java8.Time;
+package com.java8.time;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
-import java.util.stream.Stream;
 
 /**
  * Created by cyh on 2016-04-17.

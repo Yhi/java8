@@ -6,6 +6,12 @@
         <element id="directory" name="classes">
           <element id="module-output" name="java8" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.testng:testng:6.9.10" />
+          <element id="library" level="project" name="Maven: com.beust:jcommander:1.48" />
+          <element id="library" level="project" name="Maven: org.beanshell:bsh:2.0b4" />
+          <element id="library" level="project" name="Maven: io.netty:netty-all:4.1.20.Final" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/java8/target/java8-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />

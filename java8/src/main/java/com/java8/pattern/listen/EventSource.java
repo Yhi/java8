@@ -26,7 +26,7 @@ public class EventSource {
         for (DemoEventListener eventListener : listeners) {
             DemoEvent demoEvent = new DemoEvent(this);
             eventListener.processEvent(demoEvent);
-            eventListener.processEvent(demoEvent);
+
         }
     }
 

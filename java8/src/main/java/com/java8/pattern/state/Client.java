@@ -20,14 +20,12 @@ public class Client {
         //创建上下文
         Context context=new Context();
 
-
         context.setState(state1);
+        context.setState(state);
 
         context.request("test");
 
-
-
-
+        context.request("demo");
 
     }
 }

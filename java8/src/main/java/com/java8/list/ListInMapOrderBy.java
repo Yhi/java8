@@ -1,4 +1,4 @@
-package com.java8.List;
+package com.java8.list;
 
 import javax.xml.bind.SchemaOutputResolver;
 import java.util.*;

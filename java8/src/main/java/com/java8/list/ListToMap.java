@@ -1,4 +1,4 @@
-package com.java8.List;
+package com.java8.list;
 
 import java.util.*;
 import java.util.function.Function;

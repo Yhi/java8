@@ -23,7 +23,6 @@ public class Test {
 
         executor.shutdown();
 
-        super.finalize();
     }
 }
 

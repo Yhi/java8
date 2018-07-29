@@ -13,7 +13,6 @@ public class CompletableFutureMain {
         });
 
         try {
-            System.out.println("11");
 
             System.out.println(future.get());
         } catch (InterruptedException e) {

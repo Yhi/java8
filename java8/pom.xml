@@ -83,6 +83,17 @@
             <version>${logback.version}</version>
         </dependency>
 
+        <!--http://hutool.mydoc.io/-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>4.1.19</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.47</version>
+        </dependency>
 <!--
 
         <dependency>

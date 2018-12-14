@@ -1,5 +1,8 @@
 package com.java8.thread;
 
+import com.java8.pattern.single.SynchronizedSingleton;
+
+import java.util.Objects;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -9,7 +12,7 @@ public class Test {
     public static void main(String[] args) {
 
 
-        ThreadPoolExecutor executor = new ThreadPoolExecutor(5, 10, 200, TimeUnit.MILLISECONDS,
+        ThreadPoolExecutor executor = new ThreadPoolExecutor(3, 6, 100, TimeUnit.MILLISECONDS,
                 new ArrayBlockingQueue<Runnable>(5));
 
 
@@ -20,6 +23,9 @@ public class Test {
             System.out.println("队列中等待执行的任务数目:" + executor.getQueue().size() + ",");
             System.out.println("已执行完毕的任务数据：" + executor.getCompletedTaskCount());
         }
+
+
+
 
         executor.shutdown();
 

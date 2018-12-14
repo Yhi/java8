@@ -23,6 +23,10 @@ public class MyTask implements Runnable {
         System.out.println("task  :" + taskNum + "执行完毕");
 
 
+        synchronized (MyTask.class){
+
+
+        }
     }
 
 

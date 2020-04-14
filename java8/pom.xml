@@ -175,5 +175,37 @@
             </plugin>
         </plugins>
     </build>
+<!--
+    &lt;!&ndash;https://www.cnblogs.com/dzblog/p/6913809.html jar 打包方法 &ndash;&gt;
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <appendAssemblyId>false</appendAssemblyId>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            &lt;!&ndash; 此处指定main方法入口的class &ndash;&gt;
+                            <mainClass>org.example.Encryption</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>assembly</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+
+    </build>-->
 
 </project>

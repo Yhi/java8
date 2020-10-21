@@ -20,6 +20,8 @@ public class MemoryUsageTest {
         for (MemoryManagerMXBean memoryManagerMXBean : memoryManagerMXBeans) {
             System.out.println(memoryManagerMXBean.getName());
         }
+
+        System.out.println("memoryManagerMXBeans = " + memoryManagerMXBeans);
     }
 
 }

@@ -49,7 +49,6 @@ public class GenInterface {
        /*
         inums max:9  min:3
         chs max:d  min:a*/
-
-
     }
+
 }

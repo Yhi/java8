@@ -13,8 +13,9 @@ public class LambdaInterface {
         SomeFunc<String> reverse=(str)-> {
             String result = "";
             int i;
-            for (i = str.length() - 1; i >= 0; i--)
+            for (i = str.length() - 1; i >= 0; i--) {
                 result += str.charAt(i);
+            }
                 return result;
         };
         System.out.println("Lambda reversed is "+reverse.func("lambda"));

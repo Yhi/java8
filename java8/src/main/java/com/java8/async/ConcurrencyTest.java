@@ -35,6 +35,7 @@ public class ConcurrencyTest {
         for (long i=0;i<count;i++){
             b--;
         }
+        int a=1;
 
         long time=System.currentTimeMillis()-start;
         thread.join();

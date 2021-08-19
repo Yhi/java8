@@ -41,7 +41,21 @@ public class ListInMapOrderBy {
     public void listInMapOrderByJava7(){}
 
     public static void main(String[] args) {
-        listInMapOrderByJava8(listAdd());
+        //listInMapOrderByJava8(listAdd());
+
+        /**
+         * list 并发控制
+         * ConcurrentModificationException
+         */
+        //List<String> list=new ArrayList<>();
+        List<String> list= Collections.synchronizedList(new ArrayList<>());
+        for (int i = 0; i <20 ; i++) {
+            new Thread(()->{
+                list.add(UUID.randomUUID().toString().replace("",""));
+                System.out.println(list);
+            },"线程:"+(i+1)).start();
+        }
+
     }
 
 }
